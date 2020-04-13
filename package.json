@@ -1,0 +1,28 @@
+{
+  "name": "Hotel",
+  "version": "1.0.0",
+  "description": "Site Hotel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaryaIV/Hotel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaryaIV/Hotel/issues"
+  },
+  "homepage": "https://github.com/DaryaIV/Hotel#readme",
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.1",
+    "pug": "^2.0.4"
+  }
+}
