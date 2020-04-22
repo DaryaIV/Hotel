@@ -1,1 +1,4 @@
-button(class="btn btn_bg btn_border btn_transparent btn_long")
+mixin btn(text, type="bg")
+    button(class= "btn btn_"+type)= text
+
+//- button(class="btn btn_bg btn_border btn_transparent btn_long") CLICK ME

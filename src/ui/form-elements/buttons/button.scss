@@ -2,15 +2,36 @@
 
 .btn {
     min-width: 99px;
-    height: 44px;
+    min-height: 44px;
     border-radius: 22px;
     border: none;
+    padding: 0 5px;
+    margin: 0;
+    background: transparent;
     cursor: pointer;
-}
-
-.btn_bg {
-    background: $color-gradient;
     &:hover {
         opacity: 0.5;
     }
+}
+
+.btn_bg, .btn_long {
+    background: $color-gradient;
+    color: white;
+}
+
+.btn_border {
+    border: 3px solid transparent;
+    border-color: $color-purple;
+    color: $color-purple;
+}
+
+.btn_transparent {
+    color: $color-purple;
+    &:hover {
+        color: $color-shade-50;
+    }
+}
+
+.btn_long {
+    min-width: 320px;
 }

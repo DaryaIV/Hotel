@@ -1,7 +1,11 @@
 extends ../pages/layout.pug
+include form-elements/buttons/button.pug
 
 block title
     title UI
 
 block content
-    include form-elements/buttons/button.pug
+    +btn("CLICK ME")
+    +btn("CLICK ME", "border")
+    +btn("CLICK ME", "transparent")
+    +btn("CLICK ME", "long")
