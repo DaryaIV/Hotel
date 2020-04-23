@@ -62,7 +62,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, './src/ui/ui.pug'),
 			filename: './ui/index.html',
-			chunks: ['ui'],
+			chunks: ['ui'], 
 			minify: false
 		}),
 	],
@@ -84,6 +84,18 @@ module.exports = {
 				options:{
 					pretty: true
 				}
+			},
+			{
+				test: /\.(png|jpe?g|gif)$/i,
+				use: [
+					{
+						loader: 'file-loader',
+					},
+				]
+			},
+			{
+				test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+				loader: 'url-loader?limit=100000'
 			},
 			{
 				test: /\.(sa|sc|c)ss$/,
