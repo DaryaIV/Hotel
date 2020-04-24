@@ -1,5 +1,6 @@
 @import "~normalize.css";
 @import "../../assets/fonts/fonts.css";
+@import '~material-design-icons/iconfont/material-icons.css';
 
 h1, h2 {
     font-family: Quicksand, Arial, Helvetica, sans-serif;
@@ -30,5 +31,12 @@ h3, button {
 body {
     font-size: 14px;
     line-height: 24px;
+}
+
+.material-icons {
+    height: 24px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
 }
 

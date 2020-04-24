@@ -6,13 +6,13 @@
     border-radius: 22px;
     border: none;
     padding: 0 5px;
-    margin: 0;
+    text-align: center;
     background: transparent;
     cursor: pointer;
+
     &:hover {
         opacity: 0.5;
     }
-    
 }
 
 .btn_bg, .btn_long {
@@ -21,18 +21,52 @@
 }
 
 .btn_border {
-    border: 3px solid transparent;
-    border-color: $color-purple;
+    position: relative;
+    $border: 2px;
     color: $color-purple;
+    background: #ffffff;
+    background-clip: padding-box;
+    border: solid $border transparent;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin: -$border;
+        border-radius: inherit;
+        background: $color-gradient;
+     }
+
+     &:hover {
+        opacity: 1;
+        
+        &::before {
+            opacity: 0.5;
+        }
+    }
 }
 
 .btn_transparent {
     color: $color-purple;
+
     &:hover {
         color: $color-shade-50;
+        opacity: 1;
     }
 }
 
 .btn_long {
+    position: relative;
     min-width: 320px;
+    padding-right: 35px;
+    padding-left: 35px;
+
+    i {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 10px;
+        margin: auto 0;
+    }
 }
