@@ -1,8 +1,8 @@
 @import "../../../shared/styles/variables.scss";
 
 .btn {
-    min-width: 99px;
-    min-height: 44px;
+    min-width: $width;
+    min-height: $height;
     border-radius: 22px;
     border: none;
     padding: 0 5px;
@@ -23,7 +23,7 @@
 .btn_border {
     position: relative;
     $border: 2px;
-    color: $color-purple;
+    color: $color-main;
     background: #ffffff;
     background-clip: padding-box;
     border: solid $border transparent;
@@ -48,7 +48,7 @@
 }
 
 .btn_transparent {
-    color: $color-purple;
+    color: $color-main;
 
     &:hover {
         color: $color-shade-50;
@@ -58,7 +58,7 @@
 
 .btn_long {
     position: relative;
-    min-width: 320px;
+    min-width: $width-long;
     padding-right: 35px;
     padding-left: 35px;
 

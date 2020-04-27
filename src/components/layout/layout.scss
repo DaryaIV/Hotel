@@ -1,13 +1,18 @@
 @import "~normalize.css";
+@import "../../shared/styles/variables.scss";
 @import "../../assets/fonts/fonts.css";
 @import '~material-design-icons/iconfont/material-icons.css';
+
+h1, h2, h3, body, button, label {
+    color: $color-base;
+}
 
 h1, h2 {
     font-family: Quicksand, Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-h3, body, button {
+h3, body, button, label {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
@@ -21,7 +26,7 @@ h2 {
     line-height: 24px;
 }
 
-h3, button {
+h3, button, label {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -40,3 +45,8 @@ body {
     text-align: center;
 }
 
+label {
+    span {
+        display: block;
+    }
+}

@@ -1,9 +1,15 @@
+// colot
 $color-base: #1f2041;
 $color-shade-100: rgba($color-base, 1);
 $color-shade-75: rgba($color-base, 0.75);
 $color-shade-50: rgba($color-base, 0.5);
 $color-shade-25: rgba($color-base, 0.25);
 $color-shade-5: rgba($color-base, 0.05);
-$color-purple: #bc9cff;
-$color-green: #6fcf97;
-$color-gradient: linear-gradient(180deg, $color-purple 0%, #8BA4F9 100%);
+$color-main: #bc9cff;
+$color-secondary: #6fcf97;
+$color-gradient: linear-gradient(180deg, $color-main 0%, #8BA4F9 100%);
+
+// sizes form elements
+$width: 99px;
+$width-long: 320px;
+$height: 44px;
