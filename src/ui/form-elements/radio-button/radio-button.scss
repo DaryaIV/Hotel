@@ -1,0 +1,86 @@
+@import "../../../shared/styles/variables.scss";
+
+// .radio-btn {
+//     width: 20px;
+//     height: 20px;
+//     background: white;
+//     border: 1px solid $color-shade-25;
+//     cursor: pointer;
+
+//     + .radio-btn__text {
+//         display: inline-block;
+//         position: relative;
+//         padding-left: 10px;
+//         line-height: 24px;
+//         color: $color-shade-50;
+//     }
+
+//     &:checked {
+//         border: 1px solid $color-main;
+//         + .radio-btn__text {
+//             display: inline-block;
+//             color: $color-shade-75;
+//         }
+//     }
+// }
+
+.radio-btn {
+    cursor: pointer;
+}
+
+.radio-btn__wrap {
+    display: flex;
+}
+
+input[type=radio] {
+    visibility: hidden;
+    position: absolute;
+    left: -999px;
+}
+
+.radio-btn__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid $color-shade-25;
+    border-radius: 50%;
+
+    &:after {
+        content: "";
+        display: none;
+        background: $color-gradient;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.radio-btn__text {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin: 0px;
+    color: $color-shade-50;
+}
+
+input[type=radio]:checked + .radio-btn__wrap {
+
+    .radio-btn__btn {
+        border-color: $color-main;
+
+        &:after {
+            display: block;
+        }
+    }
+
+    .radio-btn__text{
+        color: $color-shade-75;
+    }
+}
+
+
+
+

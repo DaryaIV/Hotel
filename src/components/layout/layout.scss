@@ -3,7 +3,7 @@
 @import "../../assets/fonts/fonts.css";
 @import '~material-design-icons/iconfont/material-icons.css';
 
-h1, h2, h3, body, button, label {
+h1, h2, h3, body, button, label, p {
     color: $color-base;
 }
 
@@ -12,7 +12,7 @@ h1, h2 {
     font-weight: bold;
 }
 
-h3, body, button, label {
+h3, body, button, label, p {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
@@ -33,9 +33,11 @@ h3, button, label {
     text-transform: uppercase;
 }
 
-body {
+body, p {
     font-size: 14px;
     line-height: 24px;
+    font-weight: normal;
+    text-transform: none;
 }
 
 .material-icons {

@@ -1,6 +1,8 @@
 extends ../components/layout/layout.pug
 include form-elements/buttons/button.pug
 include form-elements/text-field/text-field.pug
+include form-elements/radio-button/radio-button.pug
+
 
 block title
     title UI
@@ -13,4 +15,6 @@ block content
     h1 Hello, world!
     h2 Hello, world!
     h3 Hello, world!
-    +text-field("Text field", "Email")
+    +text-field("Email", "Text field")
+    //- +radio-btn("Radio button", "men")
+    +radio-btn("Женщины", "female", "sexs")
