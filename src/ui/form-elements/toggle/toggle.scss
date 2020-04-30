@@ -1,0 +1,59 @@
+@import "../../../shared/styles/variables.scss";
+
+.toggle {
+    cursor: pointer;
+
+    input {
+        visibility: hidden;
+        position: absolute;
+        left: -999px;
+
+        &:checked + .toggle__wrap {
+
+            .toggle__btn {
+                justify-content: flex-end;
+                border-color: $color-main;
+        
+                &:after {
+                    background: $color-gradient;
+                }
+            }
+        }
+    }
+}
+
+.toggle__wrap {
+    display: flex;
+}
+
+.toggle__btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+
+    border: 1px solid $color-shade-25;
+    border-radius: 10px;
+
+    &:after {
+        content: "";
+        display: block;
+        background: $color-shade-25;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}
+
+.toggle__text {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin: 0px;
+    color: $color-shade-75;
+}
+
+

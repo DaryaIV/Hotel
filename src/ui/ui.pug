@@ -2,6 +2,8 @@ extends ../components/layout/layout.pug
 include form-elements/buttons/button.pug
 include form-elements/text-field/text-field.pug
 include form-elements/radio-button/radio-button.pug
+include form-elements/checkbox/checkbox.pug
+include form-elements/toggle/toggle.pug
 
 
 block title
@@ -12,9 +14,10 @@ block content
     +btn("CLICK ME", "border")
     +btn("CLICK ME", "transparent")
     +btn("CLICK ME", "long")
-    h1 Hello, world!
-    h2 Hello, world!
-    h3 Hello, world!
+    //- h1 Hello, world!
+    //- h2 Hello, world!
+    //- h3 Hello, world!
     +text-field("Email", "Text field")
-    //- +radio-btn("Radio button", "men")
-    +radio-btn("Женщины", "female", "sexs")
+    +radio-btn("Женщина", "female", "sexs")
+    +checkbox-btn("Женщина", "female")
+    +toggle("Получать спецпредложения", "offer")
