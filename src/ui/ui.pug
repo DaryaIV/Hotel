@@ -4,6 +4,7 @@ include form-elements/text-field/text-field.pug
 include form-elements/radio-button/radio-button.pug
 include form-elements/checkbox/checkbox.pug
 include form-elements/toggle/toggle.pug
+include form-elements/like-btn/like-btn.pug
 
 
 block title
@@ -21,3 +22,5 @@ block content
     +radio-btn("Женщина", "female", "sexs")
     +checkbox-btn("Женщина", "female")
     +toggle("Получать спецпредложения", "offer")
+    +like-btn("2", false)
+    +like-btn("12", true)
