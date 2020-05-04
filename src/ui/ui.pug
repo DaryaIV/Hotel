@@ -5,6 +5,8 @@ include form-elements/radio-button/radio-button.pug
 include form-elements/checkbox/checkbox.pug
 include form-elements/toggle/toggle.pug
 include form-elements/like-btn/like-btn.pug
+include form-elements/bullet-list/bullet-list.pug
+include form-elements/rate-button/rate-button.pug
 
 
 block title
@@ -24,3 +26,10 @@ block content
     +toggle("Получать спецпредложения", "offer")
     +like-btn("2", false)
     +like-btn("12", true)
+
+    +bullet-list
+        li Нельзя с питомцами
+        li Без вечеринок и мероприятий
+        li sndfklhfd;hsedi;hsed;hrfeh skjfksdhfk klajsd 
+    
+    +rate-btn(4)

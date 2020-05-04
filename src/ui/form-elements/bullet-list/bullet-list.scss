@@ -1,0 +1,20 @@
+@import "../../../shared/styles/variables.scss";
+
+.bullet-list li {
+    list-style-type: none;
+    position: relative;
+    color: $color-shade-75;
+
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        background: $color-shade-25;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        margin-left: -20px;
+        margin-top: 7px;
+        padding: 0;
+    }
+}

@@ -1,0 +1,11 @@
+
+mixin rate-btn(value, count=5)
+    div(class= "rating value-"+value)
+        div.star-container
+            - var i = 1;
+            while i <= count
+                div.star
+                    i.star-empty.material-icons star_border
+                    i.star-filled.material-icons star
+                    - i++
+
