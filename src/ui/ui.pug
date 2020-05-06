@@ -7,6 +7,7 @@ include form-elements/toggle/toggle.pug
 include form-elements/like-btn/like-btn.pug
 include form-elements/bullet-list/bullet-list.pug
 include form-elements/rate-button/rate-button.pug
+include form-elements/range-slider/range-slider.pug
 
 
 block title
@@ -17,19 +18,22 @@ block content
     +btn("CLICK ME", "border")
     +btn("CLICK ME", "transparent")
     +btn("CLICK ME", "long")
-    //- h1 Hello, world!
-    //- h2 Hello, world!
-    //- h3 Hello, world!
+    h1 Hello, world!
+    h2 Hello, world!
+    h3 Hello, world!
     +text-field("Email", "Text field")
     +radio-btn("Женщина", "female", "sexs")
     +checkbox-btn("Женщина", "female")
     +toggle("Получать спецпредложения", "offer")
     +like-btn("2", false)
-    +like-btn("12", true)
+    +like-btn("15", true)
 
     +bullet-list
         li Нельзя с питомцами
         li Без вечеринок и мероприятий
         li sndfklhfd;hsedi;hsed;hrfeh skjfksdhfk klajsd 
     
-    +rate-btn(4)
+    +rate-btn(2)
+
+    div.wraper
+        +range-slider

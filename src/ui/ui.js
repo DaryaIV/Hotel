@@ -7,4 +7,14 @@ import "./form-elements/toggle/toggle.scss";
 import "./form-elements/like-btn/like-btn.scss";
 import "./form-elements/bullet-list/bullet-list.scss";
 import "./form-elements/rate-button/rate-button.scss";
+import "./form-elements/range-slider/range-slider.scss";
 import './ui.scss';
+import {initRangeSliderComponent} from "./form-elements/range-slider/range-slider";
+
+const initUI = () => {
+    initRangeSliderComponent();
+};
+
+$( function() {
+    initUI();
+});

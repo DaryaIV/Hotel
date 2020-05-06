@@ -65,6 +65,13 @@ module.exports = {
 			chunks: ['ui'], 
 			minify: false
 		}),
+
+		new webpack.ProvidePlugin({
+			$: "jquery",
+			jQuery: "jquery",
+			"window.jQuery": "jquery'",
+			"window.$": "jquery"
+		})
 	],
 
 	devServer: {

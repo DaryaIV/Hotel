@@ -27,7 +27,7 @@ input[type=radio] {
     &:after {
         content: "";
         display: none;
-        background: $color-gradient;
+        background: $color-gradient-main;
         border-radius: 50%;
         width: 12px;
         height: 12px;

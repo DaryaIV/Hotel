@@ -2,8 +2,9 @@
 @import "../../shared/styles/variables.scss";
 @import "../../assets/fonts/fonts.css";
 @import '~material-design-icons/iconfont/material-icons.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-h1, h2, h3, body, button, label, p, ul, li {
+h1, h2, h3, body, button, label, p, ul, li, input {
     color: $color-base;
 }
 
@@ -12,8 +13,9 @@ h1, h2, ul {
     font-weight: bold;
 }
 
-h3, body, button, label, p, li {
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+h3, body, button, label, p, li, input {
+    // font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -26,7 +28,7 @@ h2, ul {
     line-height: 24px;
 }
 
-h3, button, label {
+h3, button, label, input {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -47,7 +49,7 @@ body, p, li {
     text-align: center;
 }
 
-label {
+label, input {
     span {
         display: block;
     }

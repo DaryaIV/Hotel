@@ -43,10 +43,10 @@
   },
   "dependencies": {
     "@webpack-cli/init": "^0.3.0",
-    "css-star-rating": "^1.2.4",
     "jquery": "^3.5.0",
     "material-design-icons": "^3.0.1",
     "normalize.css": "^8.0.1",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "webpack-jquery-ui": "^2.0.1"
   }
 }

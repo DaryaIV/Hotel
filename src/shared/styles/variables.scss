@@ -7,7 +7,8 @@ $color-shade-25: rgba($color-base, 0.25);
 $color-shade-5: rgba($color-base, 0.05);
 $color-main: #bc9cff;
 $color-secondary: #6fcf97;
-$color-gradient: linear-gradient(180deg, $color-main 0%, #8BA4F9 100%);
+$color-gradient-main: linear-gradient(180deg, $color-main 0%, #8BA4F9 100%);
+$color-gradient-secondary: linear-gradient(180deg, $color-secondary 0%, #66d2ea 100%);
 
 // sizes form elements
 $width: 99px;
