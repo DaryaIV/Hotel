@@ -1,7 +1,4 @@
-mixin like-btn(number=0, liked)
-    if liked
-        button(class= "like-btn like-btn_liked")= number
-            i.material-icons favorite
-    else 
-        button(class= "like-btn")= number
-            i.material-icons favorite_border
+mixin like-btn
+    button(class= "like-btn")
+        i.material-icons.like-btn__icon favorite_border
+        span.like-btn__count 0
