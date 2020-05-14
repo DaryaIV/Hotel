@@ -8,6 +8,7 @@ import "./form-elements/like-btn/like-btn.scss";
 import "./form-elements/bullet-list/bullet-list.scss";
 import "./form-elements/rate-button/rate-button.scss";
 import "./form-elements/range-slider/range-slider.scss";
+import "./form-elements/rich-checkbox-btn/rich-checkbox-btn.scss";
 import './ui.scss';
 import {initRangeSliderComponent} from "./form-elements/range-slider/range-slider";
 import {initLikeBtn} from "./form-elements/like-btn/like-btn";

@@ -1,0 +1,71 @@
+@import "../../../shared/styles/variables.scss";
+
+.rich-checkbox-btn {
+    cursor: pointer;
+}
+
+.rich-checkbox-btn__wrap {
+    display: flex;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+    position: absolute;
+    left: -999px;
+}
+
+.rich-checkbox-btn__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+
+    border: 1px solid $color-shade-25;
+    border-radius: 4px;
+
+    &:after {
+        content: "";
+        display: none;
+        background: url(../../../assets/img/checkbox-btn.svg) 50% 40% no-repeat;
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.rich-checkbox-btn__text {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin: 0px;
+    color: $color-shade-50;
+    line-height: 18px;
+    font-weight: bold;
+    color:$color-shade-75;
+}
+
+.rich-checkbox-btn__description {
+    display: flex;
+    color: $color-shade-25;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: none;
+    padding-top: 5px;
+    padding-left: 30px;
+    margin: 0px;
+}
+
+input[type=checkbox]:checked + .rich-checkbox-btn__wrap {
+
+    .rich-checkbox-btn__btn {
+        border-color: $color-main;
+
+        &:after {
+            display: block;
+        }
+    }
+}
+
+

@@ -8,6 +8,7 @@ include form-elements/like-btn/like-btn.pug
 include form-elements/bullet-list/bullet-list.pug
 include form-elements/rate-button/rate-button.pug
 include form-elements/range-slider/range-slider.pug
+include form-elements/rich-checkbox-btn/rich-checkbox-btn.pug
 
 
 block title
@@ -26,6 +27,9 @@ block content
     +checkbox-btn("Женщина", "female")
     +toggle("Получать спецпредложения", "offer")
     +like-btn
+    
+    div.wraper-btn
+        +rich-checkbox-btn("Широкий коридор", "Ширина коридоров в номере не менее 91 см", "hall")
 
     +bullet-list
         li Нельзя с питомцами
@@ -36,3 +40,4 @@ block content
 
     div.wraper
         +range-slider
+
