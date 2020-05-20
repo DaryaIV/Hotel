@@ -1,0 +1,48 @@
+@import "../../../shared/styles/variables.scss";
+
+.feedback__wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.feedback__wrap-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 52px;
+}
+
+.feedback__foto {
+    border: 2px solid #fff;
+    border-radius: 32px;
+    background-color: $color-main;
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.feedback__wrap-text {
+    margin: 0 0 0 10px;
+}
+
+.feedback__user-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.feedback__time {
+    margin: 0;
+}
+
+.feedback__like {
+    margin-top: 10px;
+}
+
+.feedback__text {
+    margin: 10px 0 0 0;
+    & > *:first-child {
+        margin-top: 0;
+    }
+}

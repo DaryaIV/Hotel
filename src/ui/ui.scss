@@ -10,10 +10,28 @@
 // @import "./form-elements/rate-button/rate-button.scss";
 // @import "./form-elements/range-slider/range-slider.scss";
 
+@import "../shared/styles/variables.scss";
+
 .wraper {
     width: 266px;
 }
 
 .wraper-btn {
-    width: 150px;
+    width: 250px;
 }
+
+.wrap-feedback {
+    width: 650px;
+}
+
+// .icon-list__item {
+//     border-bottom: 1px solid $color-shade-10;
+// }
+
+// .icon-list__wrap{
+//     border-bottom: 1px solid $color-shade-10;
+
+//     &:last-child {
+//         border-bottom: 0px;
+//     }
+// }

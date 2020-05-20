@@ -1,0 +1,14 @@
+include ../like-btn/like-btn.pug
+
+mixin feedback(name, date, url)
+    .feedback__wrap
+        .feedback__wrap-element
+            .feedback__foto(style= `background-image: url(${url})`)
+            .feedback__like
+                +like-btn
+        .feedback__wrap-text
+            .feedback__user-inf
+                p.feedback__user-name= name
+                p.feedback__time= date
+            .feedback__text
+                block
