@@ -1,8 +1,14 @@
 @import "../../../shared/styles/variables.scss";
 
 .checkbox-btn {
+    display: block;
     cursor: pointer;
+    margin-bottom: 10px;;
 }
+
+// .checkbox-btn__title {
+//     padding-bottom: 16px;
+// }
 
 .checkbox-btn__wrap {
     display: flex;
@@ -20,6 +26,7 @@ input[type=checkbox] {
     align-items: center;
     width: 18px;
     height: 18px;
+    flex-shrink: 0;
 
     border: 1px solid $color-shade-25;
     border-radius: 4px;
@@ -47,6 +54,7 @@ input[type=checkbox]:checked + .checkbox-btn__wrap {
 
     .checkbox-btn__btn {
         border-color: $color-main;
+        flex-shrink: 0;
 
         &:after {
             display: block;

@@ -1,4 +1,4 @@
-mixin text-field(placeholder, text)
+mixin text-field()
     label
-        span= text
-        input(type="text" placeholder= placeholder).text-field
+        //- span.text-field__title= title
+        input(type="text" placeholder!= attributes.placeholder value!= attributes.value class!= attributes.class).text-field

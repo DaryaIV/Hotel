@@ -1,6 +1,6 @@
-mixin toggle(text, value, _type="checkbox")
-    label.toggle
-        input(type= _type value= value)
+mixin toggle(text, _type="checkbox")
+    label.toggle(class!= attributes.class)
+        input(type= _type value= attributes.value checked!= attributes.checked)
         div.toggle__wrap
             div.toggle__btn
             p.toggle__text= text

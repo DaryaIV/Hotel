@@ -12,6 +12,69 @@
 
 @import "../shared/styles/variables.scss";
 
+.area__content {
+    margin-bottom: 40px;
+}
+
+.text-field__title-status {
+    display: block;
+    float: left;
+    width: 160px;
+    font-weight: normal;
+    color: $color-shade-50;
+    text-align: right;
+    margin: 0;
+}
+
+.text-field__title {
+    display: block;
+    float: left;
+    width: 160px;
+    margin: 0;
+}
+
+.text-field_focus {
+    border-color: $color-shade-50;
+}
+
+.area_text-btn {
+    display: flex;
+    flex-direction: row;
+    margin: 143px 141px 100px 141px;
+}
+
+.area__wrap {
+    margin: 0px 63px;
+    width: 320px;
+}
+
+.area-checkbox-btn__wrap {
+    margin: 0 0 41px 0;
+    max-width: 230px;
+}
+
+.area-radio-btn__wrap, .area-toggle__wrap, .area-like-btn__wrap{
+    margin: 0 0 45px 0;
+}
+
+.area-toggle__wrap{
+    &label:first-of-type {
+        margin-bottom: 14px;
+    }
+}
+
+
+
+.btn__title{
+    margin: 0 0 16px 0;
+}
+
+.sex-radio-btn {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
 .wraper {
     width: 266px;
 }

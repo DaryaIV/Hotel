@@ -1,6 +1,6 @@
-mixin radio-btn(text, value, name)
-    label.radio-btn
-        input(type="radio" name= name value= value)
+mixin radio-btn(text)
+    label.radio-btn(class!= attributes.class)
+        input(type="radio" name!= attributes.name value!= attributes.value checked!= attributes.checked)
         div.radio-btn__wrap
             div.radio-btn__btn
             p.radio-btn__text= text

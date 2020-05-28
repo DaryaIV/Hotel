@@ -1,6 +1,7 @@
-mixin checkbox-btn(text, value)
-    label.checkbox-btn
-        input(type="checkbox" value= value)
+mixin checkbox-btn(text)
+    label.checkbox-btn(class!= attributes.class)
+        //- span.checkbox-btn__title= title
+        input(type="checkbox" value!= attributes.value name!= attributes.name checked!= attributes.checked)
         div.checkbox-btn__wrap
             div.checkbox-btn__btn
             p.checkbox-btn__text= text

@@ -11,24 +11,59 @@ include form-elements/range-slider/range-slider.pug
 include form-elements/rich-checkbox-btn/rich-checkbox-btn.pug
 include form-elements/feedback/feedback.pug
 include form-elements/icon-list/icon-list.pug
+include form-elements/title/title.pug
 
 
 block title
     title UI
 
 block content
-    +btn("CLICK ME")
-    +btn("CLICK ME", "border")
-    +btn("CLICK ME", "transparent")
-    +btn("CLICK ME", "long")
+    .area.area_text-btn
+        .area__wrap
+            .area__content
+                +title("Text field", "Default")
+                +text-field(placeholder= "Email")
+                +title("Text field", "Hover/Focus")
+                +text-field(value= "This is a pretty awesome" class= "text-field_focus")
+                +title("Dropdown")
+                +title("Masked text field")
+            .area__content
+                +title("Date dropdown")
+                +title("Date dropdown")
+            .area__content
+                +title("Filter date dropdown")
+            .area__content
+                +title("Subscription text field")
+        .area__wrap
+            .area__content
+                +title("Checkbox buttons")
+                +checkbox-btn("Можно курить")(value= "smoke" name= "allowed")
+                +checkbox-btn("Можно с питомцами")(value= "animales" name= "allowed" checked)
+                +checkbox-btn("Можно пригласить гостей (до 10 человек)")(value= "guests" name= "allowed" checked)
+            .area__content
+                +title("Radio buttons")
+                +radio-btn("Мужчина")(value= "men" name= "sex" class= "sex-radio-btn" checked)
+                +radio-btn("Женщина")(value= "women" name= "sex")
+            .area__content
+                +title("Toggle")
+                +toggle("Получать спецпредложения")(value= "offer" checked)
+                +toggle("Получать спецпредложения")(value= "offer")
+            .area__content
+                +title("Like button")
+                +like-btn
+                +like-btn
+            .area__content
+                +title("Rate button")
+        .area__wrap
+            +btn("CLICK ME")
+            +btn("CLICK ME", "border")
+            +btn("CLICK ME", "transparent")
+            +btn("CLICK ME", "long")
     h1 Hello, world!
     h2 Hello, world!
     h3 Hello, world!
-    +text-field("Email", "Text field")
-    +radio-btn("Женщина", "female", "sexs")
-    +checkbox-btn("Женщина", "female")
-    +toggle("Получать спецпредложения", "offer")
-    +like-btn
+
+
     
     div.wraper-btn
         +rich-checkbox-btn("Широкий коридор", "Ширина коридоров в номере не менее 91 см", "hall")

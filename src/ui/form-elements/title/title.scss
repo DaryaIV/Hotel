@@ -1,0 +1,17 @@
+@import "../../../shared/styles/variables.scss";
+
+.title__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title__name {
+    margin: 0;
+}
+
+.title__desc {
+    text-transform: uppercase;
+    color: $color-shade-50;
+    font-size: 12px;
+    line-height: 15px;
+}
