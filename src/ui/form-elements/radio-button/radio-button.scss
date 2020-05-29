@@ -23,6 +23,7 @@ input[type=radio] {
 
     border: 1px solid $color-shade-25;
     border-radius: 50%;
+    flex-shrink: 0;
 
     &:after {
         content: "";
@@ -47,6 +48,7 @@ input[type=radio]:checked + .radio-btn__wrap {
 
     .radio-btn__btn {
         border-color: $color-main;
+        flex-shrink: 0;
 
         &:after {
             display: block;

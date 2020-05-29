@@ -1,6 +1,6 @@
 mixin btn(text, type="bg")
     if type != "long"
-        button(class= "btn btn_"+type)= text
+        button(disabled!= attributes.disabled class= "btn btn_"+type)= text
     else
-        button(class= "btn btn_"+type)= text
+        button(disabled!= attributes.disabled class= "btn btn_"+type)= text
             i.material-icons arrow_forward

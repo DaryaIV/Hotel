@@ -1,9 +1,14 @@
 @import "../../../shared/styles/variables.scss";
 
+.bullet-list {
+    padding-left: 20px;
+}
+
 .bullet-list li {
     list-style-type: none;
     position: relative;
     color: $color-shade-75;
+    margin: 0 0 10px 0;
 
     &:before {
         content: "";

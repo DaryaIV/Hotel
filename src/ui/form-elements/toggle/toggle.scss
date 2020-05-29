@@ -13,6 +13,7 @@
             .toggle__btn {
                 justify-content: flex-end;
                 border-color: $color-main;
+                flex-shrink: 0;
         
                 &:after {
                     background: $color-gradient-main;
@@ -37,6 +38,7 @@
 
     border: 1px solid $color-shade-25;
     border-radius: 10px;
+    flex-shrink: 0;
 
     &:after {
         content: "";

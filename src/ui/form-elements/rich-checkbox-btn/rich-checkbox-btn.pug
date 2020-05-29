@@ -1,6 +1,6 @@
-mixin rich-checkbox-btn(text, description, value)
+mixin rich-checkbox-btn(text)
     label.rich-checkbox-btn
-        input(type="checkbox" value= value)
+        input(type="checkbox" value!= attributes.value class!= attributes.class)
         div.rich-checkbox-btn__wrap-btn
             div.rich-checkbox-btn__btn
         div.rich-checkbox-btn__wrap-text

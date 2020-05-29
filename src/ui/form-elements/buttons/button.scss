@@ -48,6 +48,9 @@
 }
 
 .btn_transparent {
+    min-width: 60px;
+    min-height: 15px;
+    padding: 0;
     color: $color-main;
 
     &:hover {
@@ -69,4 +72,22 @@
         right: 10px;
         margin: auto 0;
     }
+}
+
+.btn:disabled {
+    cursor: auto;
+    opacity: 0.5;
+}
+
+.btn_border:disabled {
+    opacity: 1;
+
+    &::before {
+        opacity: 0.5;
+    }
+}
+
+.btn_transparent:disabled {
+    color: $color-shade-50;
+    opacity: 1;
 }

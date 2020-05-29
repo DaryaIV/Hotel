@@ -12,35 +12,14 @@
 
 @import "../shared/styles/variables.scss";
 
-.area__content {
-    margin-bottom: 40px;
-}
-
-.text-field__title-status {
-    display: block;
-    float: left;
-    width: 160px;
-    font-weight: normal;
-    color: $color-shade-50;
-    text-align: right;
-    margin: 0;
-}
-
-.text-field__title {
-    display: block;
-    float: left;
-    width: 160px;
-    margin: 0;
-}
-
-.text-field_focus {
-    border-color: $color-shade-50;
-}
-
-.area_text-btn {
+.area {
     display: flex;
     flex-direction: row;
     margin: 143px 141px 100px 141px;
+}
+
+.area_small {
+    margin-bottom: 50px;
 }
 
 .area__wrap {
@@ -48,53 +27,29 @@
     width: 320px;
 }
 
-.area-checkbox-btn__wrap {
-    margin: 0 0 41px 0;
-    max-width: 230px;
+.area__wrap_long {
+    width: 766px;
 }
 
-.area-radio-btn__wrap, .area-toggle__wrap, .area-like-btn__wrap{
-    margin: 0 0 45px 0;
+.area__content {
+    margin-bottom: 40px;
 }
 
-.area-toggle__wrap{
-    &label:first-of-type {
-        margin-bottom: 14px;
+.content__wrap {
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.content__wrap_horizontal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    & > * {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
-
-
-
-.btn__title{
-    margin: 0 0 16px 0;
-}
-
-.sex-radio-btn {
-    display: block;
-    float: left;
-    margin-right: 20px;
-}
-
-.wraper {
-    width: 266px;
-}
-
-.wraper-btn {
-    width: 250px;
-}
-
-.wrap-feedback {
-    width: 650px;
-}
-
-// .icon-list__item {
-//     border-bottom: 1px solid $color-shade-10;
-// }
-
-// .icon-list__wrap{
-//     border-bottom: 1px solid $color-shade-10;
-
-//     &:last-child {
-//         border-bottom: 0px;
-//     }
-// }
