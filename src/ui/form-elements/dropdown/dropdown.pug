@@ -1,0 +1,24 @@
+mixin dropdown()
+    .dropdown__wrap
+        label.dropdown__text-field
+            input(type="text" name!= attributes.name placeholder!= attributes.placeholder value!= attributes.value class!= attributes.class disabled!= attributes.disabled).dropdown__text
+            button.dropdown__btn
+                i.material-icons.dropdown__icon expand_more
+        .dropdown__setting
+            span.setting__name взрослые
+            button.setting__minus -
+            span.setting__qt 0
+            button.setting__plus +
+        .dropdown__setting
+            span.setting__name дети
+            button.setting__minus -
+            span.setting__qt 0
+            button.setting__plus +
+        .dropdown__setting
+            span.setting__name младенцы
+            button.setting__minus -
+            span.setting__qt 0
+            button.setting__plus +
+        button.dropdown__cancel очистить
+        button.dropdown__apply применить
+//- select

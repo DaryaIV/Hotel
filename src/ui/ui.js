@@ -12,13 +12,19 @@ import "./form-elements/rich-checkbox-btn/rich-checkbox-btn.scss";
 import "./form-elements/feedback/feedback.scss";
 import "./form-elements/icon-list/icon-list.scss";
 import "./form-elements/title/title.scss";
+import "./form-elements/sub-text-field/sub-text-field.scss";
+import "./form-elements/dropdown/dropdown.scss";
+import "./form-elements/checkbox-list/checkbox-list.scss";
 import './ui.scss';
 import {initRangeSliderComponent} from "./form-elements/range-slider/range-slider";
 import {initLikeBtn} from "./form-elements/like-btn/like-btn";
+import {initCheckboxList} from "./form-elements/checkbox-list/checkbox-list";
 
 const initUI = () => {
     initRangeSliderComponent();
     initLikeBtn(".like-btn", 23);
+    initCheckboxList("#list-unexpanded");
+    initCheckboxList("#list-expanded", true);
 };
 
 $( function() {

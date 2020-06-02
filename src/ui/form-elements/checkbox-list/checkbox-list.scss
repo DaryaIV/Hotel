@@ -1,0 +1,57 @@
+@import "../../../shared/styles/variables.scss";
+
+.checkbox-list {
+    position: relative;
+    display: block;
+    min-width: 267px;
+
+    &.checkbox-list_expanded {
+        .checkbox-list__btn {
+            transform: rotateX(180deg);
+        }
+
+        .checkbox-list__content {
+            display: block;
+        }
+    }
+}
+
+.checkbox-list__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.checkbox-list__icon {
+    color: $color-shade-50;
+}
+
+.checkbox-list__title {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding: 0px 44px 0 0;
+}
+
+// .checkbox-list__btn_expanded {
+//     transform: rotateX(180deg);
+// }
+
+.checkbox-list__content {
+    display: none;
+}
+
+// .checkbox-list__content_expanded {
+//     display: block;
+// }
+
+

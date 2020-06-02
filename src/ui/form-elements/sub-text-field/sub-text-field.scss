@@ -1,0 +1,52 @@
+@import "../../../shared/styles/variables.scss";
+
+.sub-text-field__wrap {
+    position: relative;
+    display: block;
+    margin: 5px 0 20px 0;
+}
+
+.sub-text-field {
+    min-width: 267px;
+    width: 100%;
+    height: $height;
+    background: white;
+    border: 1px solid $color-shade-25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: $color-shade-75;
+    padding: 0px 44px 0 15px;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: none;
+
+    &:hover, &:focus {
+        border: 1px solid $color-shade-50;
+    }
+
+    &::placeholder {
+        color: $color-shade-25;
+    }
+}
+
+.sub-text-field__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+
+}
+
+.sub-text-field__icon {
+    color: $color-main;
+}

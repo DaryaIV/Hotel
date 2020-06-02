@@ -12,6 +12,9 @@ include form-elements/rich-checkbox-btn/rich-checkbox-btn.pug
 include form-elements/feedback/feedback.pug
 include form-elements/icon-list/icon-list.pug
 include form-elements/title/title.pug
+include form-elements/sub-text-field/sub-text-field.pug
+include form-elements/dropdown/dropdown.pug
+include form-elements/checkbox-list/checkbox-list.pug
 
 block title
     title UI
@@ -24,7 +27,8 @@ block content
                 +text-field(placeholder= "Email")
                 +title("Text field", "Hover/Focus")
                 +text-field(value= "This is a pretty awesome" class= "text-field_focus")
-                +title("Dropdown")
+                +title("Dropdown", "Default")
+                +dropdown(placeholder= "Сколько гостей" disabled)
                 +title("Masked text field", "Default")
                 +text-field("00.00.0000")(placeholder= "ДД.ММ.ГГГГ")
             .area__content
@@ -34,6 +38,8 @@ block content
                 +title("Filter date dropdown")
             .area__content
                 +title("Subscription text field")
+                .content__wrap.content__wrap_short
+                    +sub-text-field(placeholder= "Email")
         .area__wrap
             .area__content
                 +title("Checkbox buttons")
@@ -96,7 +102,23 @@ block content
     .area.area_small
         .area__wrap
             .area__content
-                +title("Expandable checkbox list")
+                //- +title("Expandable checkbox list")
+                .content__wrap.content__wrap_short
+                    +checkbox-list("Expandable checkbox list")(id= "list-unexpanded")
+                        +checkbox-btn("Завтрак")(value= "breakfast" name= "list")
+                        +checkbox-btn("Письменный стол")(value= "table" name= "list" checked)
+                        +checkbox-btn("Стул для кормления")(value= "chair" name= "list" checked)
+                        +checkbox-btn("Кроватка")(value= "cot" name= "list" checked)
+                        +checkbox-btn("Телевизор")(value= "tv" name= "list")
+                        +checkbox-btn("Шампунь")(value= "shampoo" name= "list")
+                .content__wrap.content__wrap_short
+                    +checkbox-list("Expandable checkbox list")(id= "list-expanded")
+                        +checkbox-btn("Завтрак")(value= "breakfast" name= "list")
+                        +checkbox-btn("Письменный стол")(value= "table" name= "list" checked)
+                        +checkbox-btn("Стул для кормления")(value= "chair" name= "list" checked)
+                        +checkbox-btn("Кроватка")(value= "cot" name= "list" checked)
+                        +checkbox-btn("Телевизор")(value= "tv" name= "list")
+                        +checkbox-btn("Шампунь")(value= "shampoo" name= "list")
         .area__wrap
             .area__content
                 +title("Rich checkbox button")
