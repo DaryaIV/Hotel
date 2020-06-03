@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: row;
     margin: 143px 141px 100px 141px;
+    flex-shrink: 0;
 }
 
 .area_small {
@@ -25,6 +26,7 @@
 .area__wrap {
     margin: 0px 63px;
     width: 320px;
+    flex-shrink: 0;
 }
 
 .area__wrap_long {

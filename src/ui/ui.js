@@ -19,12 +19,15 @@ import './ui.scss';
 import {initRangeSliderComponent} from "./form-elements/range-slider/range-slider";
 import {initLikeBtn} from "./form-elements/like-btn/like-btn";
 import {initCheckboxList} from "./form-elements/checkbox-list/checkbox-list";
+import {initRateButton} from "./form-elements/rate-button/rate-button";
 
 const initUI = () => {
     initRangeSliderComponent();
     initLikeBtn(".like-btn", 23);
     initCheckboxList("#list-unexpanded");
     initCheckboxList("#list-expanded", true);
+    initRateButton("#ui-rate-btn", 4);
+    initRateButton("#ui-rate-btn2", 5);
 };
 
 $( function() {

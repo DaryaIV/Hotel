@@ -1,1 +1,27 @@
+@import "../../../../node_modules/jquery-bar-rating/dist/themes/css-stars.css"; 
+
 @import "../../../shared/styles/variables.scss";
+
+.br-theme-css-stars .br-widget a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    font-size: 24px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .br-theme-css-stars .br-widget a {
+    &:after {
+        content: "star_border";
+        color: $color-main;
+        font-family: 'Material Icons';
+    }
+
+    &.br-active:after, &.br-selected:after {
+        content: "star";
+        color: $color-main;
+    }
+  }
