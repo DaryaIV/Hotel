@@ -20,6 +20,7 @@ import {initRangeSliderComponent} from "./form-elements/range-slider/range-slide
 import {initLikeBtn} from "./form-elements/like-btn/like-btn";
 import {initCheckboxList} from "./form-elements/checkbox-list/checkbox-list";
 import {initRateButton} from "./form-elements/rate-button/rate-button";
+import {initMaskedTextField} from "./form-elements/text-field/text-field";
 
 const initUI = () => {
     initRangeSliderComponent();
@@ -28,6 +29,8 @@ const initUI = () => {
     initCheckboxList("#list-expanded", true);
     initRateButton("#ui-rate-btn", 4);
     initRateButton("#ui-rate-btn2", 5);
+    initMaskedTextField("#masked-text")
+
 };
 
 $( function() {
