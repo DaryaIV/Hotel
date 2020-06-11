@@ -11,10 +11,11 @@ include form-elements/range-slider/range-slider.pug
 include form-elements/rich-checkbox-btn/rich-checkbox-btn.pug
 include form-elements/feedback/feedback.pug
 include form-elements/icon-list/icon-list.pug
-include form-elements/title/title.pug
+include form-elements/element-title/element-title.pug
 include form-elements/sub-text-field/sub-text-field.pug
 include form-elements/dropdown/dropdown.pug
 include form-elements/checkbox-list/checkbox-list.pug
+//- include form-elements/forms/log-form/log-form.pug
 
 block title
     title UI
@@ -23,57 +24,61 @@ block content
     .area
         .area__wrap
             .area__content
-                +title("Text field", "Default")
-                +text-field(placeholder= "Email")
-                +title("Text field", "Hover/Focus")
-                +text-field(value= "This is a pretty awesome" class= "text-field_focus")
-                +title("Dropdown", "Default")
-                +dropdown(placeholder= "Сколько гостей" disabled)
-                +title("Masked text field", "Default")
-                +text-field(true)(placeholder= "ДД.ММ.ГГГГ" id= "masked-text")
+                .content__wrap_margin
+                    +element-title("Text field", "Default")
+                        +text-field(placeholder= "Email")
+                .content__wrap_margin
+                    +element-title("Text field", "Hover/Focus")
+                        +text-field(value= "This is a pretty awesome" class= "text-field_focus")
+                .content__wrap_margin
+                    +element-title("Dropdown", "Default")
+                        +dropdown("Сколько гостей")
+                .content__wrap_margin
+                    +element-title("Masked text field", "Default")
+                        +text-field(true)(placeholder= "ДД.ММ.ГГГГ" id= "masked-text")
             .area__content
-                +title("Date dropdown")
-                +title("Date dropdown")
+                +element-title("Date dropdown")
+                +element-title("Date dropdown")
             .area__content
-                +title("Filter date dropdown")
+                +element-title("Filter date dropdown")
             .area__content
-                +title("Subscription text field")
-                .content__wrap.content__wrap_short
-                    +sub-text-field(placeholder= "Email")
+                +element-title("Subscription text field")
+                    .content__wrap.content__wrap_short
+                        +sub-text-field(placeholder= "Email")
         .area__wrap
             .area__content
-                +title("Checkbox buttons")
+                +element-title("Checkbox buttons")
                 .content__wrap
                     +checkbox-btn("Можно курить")(value= "smoke" name= "allowed")
                     +checkbox-btn("Можно с питомцами")(value= "animales" name= "allowed" checked)
                     +checkbox-btn("Можно пригласить гостей (до 10 человек)")(value= "guests" name= "allowed" checked)
             .area__content
-                +title("Radio buttons")
+                +element-title("Radio buttons")
                 .content__wrap.content__wrap_horizontal
                     +radio-btn("Мужчина")(value= "men" name= "sex" class= "sex-radio-btn" checked)
                     +radio-btn("Женщина")(value= "women" name= "sex")
             .area__content
-                +title("Toggle")
+                +element-title("Toggle")
                 .content__wrap
                     +toggle("Получать спецпредложения")(value= "offer" checked)
                     +toggle("Получать спецпредложения")(value= "offer")
             .area__content
-                +title("Like button")
+                +element-title("Like button")
                 .content__wrap.content__wrap_horizontal
                     +like-btn
                     +like-btn
             .area__content
-                +title("Rate button")
+                +element-title("Rate button")
                 .content__wrap.content__wrap_horizontal
                     +rate-btn(id= "ui-rate-btn")
                     +rate-btn(id= "ui-rate-btn2")
         .area__wrap
             .area__content
-                +title("Range slider")
+                +element-title("Range slider")
                 .content__wrap.content__wrap_short
                         +range-slider
             .area__content
-                +title("Buttons")
+                +element-title("Buttons")
                 .content__wrap.content__wrap_horizontal
                     +btn("CLICK ME")
                     +btn("CLICK ME")(disabled)
@@ -86,25 +91,25 @@ block content
                 .content__wrap
                     +btn("CLICK ME", "long")
             .area__content
-                +title("Pagination")
+                +element-title("Pagination")
                 .content__wrap
     .area
         .area__wrap
             .area__content
-                +title("Dropdown", "Default")
+                +element-title("Dropdown", "Default")
                 .content__wrap
-                +title("Dropdown", "Expanded")
+                +element-title("Dropdown", "Expanded")
                 .content__wrap
         .area__wrap
             .area__content
-                +title("Dropdown")
+                +element-title("Dropdown")
         .area__wrap
             .area__content
-                +title("Dropdown")
+                +element-title("Dropdown")
     .area.area_small
         .area__wrap
             .area__content
-                //- +title("Expandable checkbox list")
+                //- +element-title("Expandable checkbox list")
                 .content__wrap.content__wrap_short
                     +checkbox-list("Expandable checkbox list")(id= "list-unexpanded")
                         +checkbox-btn("Завтрак")(value= "breakfast" name= "list")
@@ -123,7 +128,7 @@ block content
                         +checkbox-btn("Шампунь")(value= "shampoo" name= "list")
         .area__wrap
             .area__content
-                +title("Rich checkbox button")
+                +element-title("Rich checkbox button")
                 .content__wrap
                     +rich-checkbox-btn("Широкий коридор")(value= "hall")
                         p Ширина коридоров в номере не менее 91 см
@@ -131,7 +136,7 @@ block content
                         p На 1 этаже вас встретит специалист и проводит до номера
         .area__wrap
             .area__content
-                +title("Bullet list")
+                +element-title("Bullet list")
                 .content__wrap
                         +bullet-list
                             li Нельзя с питомцами
@@ -140,15 +145,22 @@ block content
     .area
         .area__wrap
             .area__content
-                +title("Bullet list")
+                +element-title("Bullet list")
                 .content__wrap
                         +icon-list("mood", "Комфорт", "Шумопоглощающие стены")
                         +icon-list("location_city", "Удобство", "Окно в каждой из спален")
                         //- +icon-list("whatshot", "Уют", "Номер оснащен камином")
         .area__wrap.area__wrap_long
             .area__content
-                +title("Bullet list")
+                +element-title("Bullet list")
                 .content__wrap
                     +feedback("Мурад Сарафанов", "5 дней назад", 'https://avatars.mds.yandex.net/get-pdb/222681/42c2066c-eb68-4d72-b1d6-3a621ef09bf7/s1200?webp=false')
                         p Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+    .area
+        .area__wrap.area__wrap_form
+            //- +log-form("Войти")
+            include form-elements/forms/log-form/log-form.pug
+        .area__wrap.area__wrap_form
+            //- +log-form("Войти")
+            include form-elements/forms/reg-form/reg-form.pug
 

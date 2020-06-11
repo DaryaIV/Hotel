@@ -1,7 +1,7 @@
 mixin text-field(masked= false)
     if masked
-        label
+        label.text-field__wrap
             input(type="text" name!= attributes.name placeholder!= attributes.placeholder value!= attributes.value class!= attributes.class id!= attributes.id).text-field.text-field_masked
     else
-        label
+        label.text-field__wrap
             input(type="text" name!= attributes.name placeholder!= attributes.placeholder value!= attributes.value class!= attributes.class id!= attributes.id).text-field

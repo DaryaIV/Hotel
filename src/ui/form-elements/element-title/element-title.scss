@@ -1,15 +1,24 @@
 @import "../../../shared/styles/variables.scss";
 
-.title__wrap {
-    display: flex;
-    justify-content: space-between;
+.element-title > * {
+    margin-bottom: 10px;;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
-.title__name {
+.element-title__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.element-title__name {
     margin: 0;
 }
 
-.title__desc {
+.element-title__desc {
     text-transform: uppercase;
     color: $color-shade-50;
     font-size: 12px;

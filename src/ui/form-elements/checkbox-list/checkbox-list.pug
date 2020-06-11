@@ -1,16 +1,16 @@
-include ../title/title.pug
+include ../element-title/element-title.pug
 
 mixin checkbox-list(title)
     //- unless expanded
     .checkbox-list(id= attributes.id)
-        +title(title)(class= "checkbox-list__title")
+        +element-title(title)(class= "checkbox-list__title")
         button.checkbox-list__btn
             i.material-icons.checkbox-list__icon expand_more
         .checkbox-list__content
             block
     //- else 
     //-     .checkbox-list.checkbox-list_expanded
-    //-         +title(title)(class= "checkbox-list__title")
+    //-         +element-title(title)(class= "checkbox-list__title")
     //-         button.checkbox-list__btn
     //-             i.material-icons.checkbox-list__icon expand_more
     //-         .checkbox-list__content

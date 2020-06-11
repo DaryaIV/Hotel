@@ -16,12 +16,20 @@
   .br-theme-css-stars .br-widget a {
     &:after {
         content: "star_border";
+        background: $color-gradient-main;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         color: $color-main;
         font-family: 'Material Icons';
     }
 
     &.br-active:after, &.br-selected:after {
         content: "star";
+        background: $color-gradient-main;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         color: $color-main;
     }
   }

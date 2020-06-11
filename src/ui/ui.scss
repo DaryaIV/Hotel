@@ -33,6 +33,10 @@
     width: 766px;
 }
 
+.area__wrap_form {
+    width: 380px;
+}
+
 .content__wrap_short {
     width: 267px;
 }
@@ -42,13 +46,16 @@
 }
 
 .content__wrap {
-    margin-top: 16px;
-    margin-bottom: 30px;
+    margin: 16px 0 30px;
 }
 
 .content__wrap_short {
     width: 267px;
     margin: 0;
+}
+
+.content__wrap_margin {
+    margin: 0 0 20px;
 }
 
 .content__wrap_horizontal {

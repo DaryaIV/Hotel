@@ -1,0 +1,33 @@
+extends ../layout-form.pug
+//- include ../../text-field/text-field.pug
+//- include ../../buttons/button.pug
+
+//- mixin log-form(title)
+//-     form(name= "log-form" class= "log-form")
+//-         h1.log-form__title= title
+//-         +text-field(placeholder= "Email" class= "log-form__text" name= "log-form")
+//-         +text-field(placeholder= "Пароль" class= "log-form__text" name= "log-form")
+//-         +btn("Войти", "long")(form= "log-form" class= "log-form__btn")
+//-         .log-form__wrap
+//-             p.log-form__qs Нет аккаунта на Toxin?
+//-             +btn("Создать", "border")(form= "log-form")
+
+block title
+    .form__title
+        h1.log-form__title Войти
+
+block content
+    .form__content
+        +text-field(placeholder= "Email" class= "log-form__text" name= "log-form")
+        +text-field(placeholder= "Пароль" class= "log-form__text" name= "log-form")
+
+block footer
+    .form__footer
+        +btn("Войти", "long")(form= "log-form" class= "log-form__btn")
+
+block footnote
+    .form__footnote
+        p.form__qs Нет аккаунта на Toxin?
+        .border-btn__wrap
+            +btn("Создать", "border")(form= "log-form")
+

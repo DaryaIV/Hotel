@@ -1,0 +1,7 @@
+mixin element-title(title, desc)
+    .element-title(class!= attributes.class)
+        .element-title__wrap
+            h3.element-title__name= title
+            span.element-title__desc= desc
+        block
+    

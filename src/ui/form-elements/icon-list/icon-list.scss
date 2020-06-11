@@ -14,9 +14,12 @@
 .icon-list__icon {
     width: 48px;
     height: 48px;
+    background: $color-gradient-main;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: $color-main;
     font-size: 48px;
-    background-color: $color-gradient-main;
 }
 
 .icon-list__wrap-text {

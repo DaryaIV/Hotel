@@ -1,0 +1,34 @@
+extends ../layout-form.pug
+//- include ../../text-field/text-field.pug
+//- include ../../buttons/button.pug
+
+block title
+    .form__title
+        h1.reg-form__title Регистрация аккаунта
+
+block content
+    .form__content
+        +text-field(placeholder= "Имя" class= "reg-form__text" name= "reg-form")
+        +text-field(placeholder= "Фамилия" class= "reg-form__text" name= "reg-form")
+        .content__wrap_horizontal
+            +radio-btn("Мужчина")(value= "men" name= "sex" class= "sex-radio-btn" checked form= "reg-form")
+            +radio-btn("Женщина")(value= "women" name= "sex" form= "reg-form")
+    .form__content
+        +element-title("Дата рождения")(class= "reg-form__caption")
+            +text-field(true)(placeholder= "ДД.ММ.ГГГГ" id= "masked-text")
+    .form__content
+        +element-title("Данные для входа в сервис")(class= "reg-form__caption")
+            +text-field(placeholder= "Email" class= "reg-form__text" name= "reg-form")
+            +text-field(placeholder= "Пароль" class= "reg-form__text" name= "reg-form")
+            +toggle("Получать спецпредложения")(value= "offer")
+
+block footer
+    .form__footer
+        +btn("Перейти к оплате", "long")(form= "reg-form" class= "reg-form__btn")
+
+block footnote
+    .form__footnote
+        p.form__qs Нет аккаунта на Toxin?
+        .border-btn__wrap
+            +btn("Войти", "border")(form= "reg-form")
+
